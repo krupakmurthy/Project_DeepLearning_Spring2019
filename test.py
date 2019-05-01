@@ -146,7 +146,7 @@ saver = tf.train.Saver()
 #taking file name as a command line argument and predicting results using trained model 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
-    saver.restore(sess, "C:/Users/Dell/Desktop/DL/trained_model_final/DL/model.cktp-640")
+    saver.restore(sess, "C:/Users/Dell/Desktop/DL/trained_model_final/DL/model.cktp-1024")
     img = cv2.imread(sys.argv[1], cv2.IMREAD_GRAYSCALE)
     img = cv2.resize(img, (224, 224))
     test_x=np.array(img)
