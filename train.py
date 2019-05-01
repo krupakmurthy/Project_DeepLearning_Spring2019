@@ -172,7 +172,7 @@ summary_op = tf.summary.merge([
 # importing dataset from create_data file
 from create_data import train_data
 from create_data import train_labels 
-#running model with batch size=32 and epoch=20
+#running model with batch size=32 and epoch=35
 order = np.arange(len(train_data))
 bs = 32
 print("load data:", len(train_data))
